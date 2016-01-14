@@ -1,0 +1,10 @@
+<div id="header_container">
+    <div class="header_left">
+        <div class="nav_left"></div>
+    </div><div class="header_right"> <br>
+        <div class="header_image"></div>
+        <div class="nav_bar">
+            <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+        </div>
+    </div>
+</div>
