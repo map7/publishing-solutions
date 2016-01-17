@@ -14,7 +14,9 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require_self
- */
+ *= require owl.carousel
+ *= require owl.theme
+ */ 
 
 body {
   font-family: sans-serif;
@@ -63,6 +65,7 @@ body {
 /*------------ HEADER --------------*/
 #header_container {
     border-top:4px solid #13b5ea;
+    position:relative;
 
 }
 
@@ -71,8 +74,29 @@ body {
     display:inline-block;
     width:25%;
     height:200px;
+    position:relative;
 }
 
+.nav_left_top {
+    background-color:#13b5ea;
+    height:158px;
+    position:absolute;
+    margin-right:73px;
+    right:0px;
+    bottom:42px;
+    width:42px; 
+}
+
+
+.nav_left {
+    background-color:#3498DB;
+    height:42px;
+    position:absolute;
+    margin-right:3px;
+    right:0px;
+    bottom:0px;
+    width:70px; 
+}
 
 
 .header_right {
@@ -80,8 +104,8 @@ body {
     width:75%;
     height:200px;
     background-color:red;
-    vertical-align:bottom;
-    position:relative;
+    position:absolute;
+    right:0px;
 }
 
 .header_image {
@@ -136,3 +160,18 @@ body {
 
 /*------------ FOOTER --------------*/
 
+
+
+/*------------ OWL-CAROUSEL --------------*/
+.owl-carousel {
+    background-color:#DDD;
+    width:100%;
+    
+}
+
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
