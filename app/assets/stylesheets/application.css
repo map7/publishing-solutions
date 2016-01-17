@@ -108,13 +108,23 @@ body {
     width:70px; 
 }
 
-
 .header_right {
     display:inline-block;
     width:75%;
     height:200px;
     position:absolute;
     right:0px;
+}
+
+.image-box {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-250px;
+    width:500px;
+    height:154px;
+    background: #DDDDDD;}
 }
 
 .header_image {
