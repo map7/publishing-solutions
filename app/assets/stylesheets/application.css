@@ -224,6 +224,7 @@ h2 {
 /*------------ FOOTER --------------*/
 
 footer {
+    font-size:small;
     background-color:#3498DB;
     height:40px;
     position:fixed;
