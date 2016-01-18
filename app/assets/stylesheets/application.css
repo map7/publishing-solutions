@@ -42,14 +42,12 @@ body {
 
 
 #page {
-    background-color:#ddd;
 }
 
 .content_rigth {
     float:right;
     width:75%;
     height:600px;
-    background-color:yellow;
 
 }
 
@@ -57,9 +55,15 @@ body {
     float:right;
     width:25%;
     height:600px;
-    background-color:blue;
     position:relative;
     left:0px;
+}
+
+.logo {
+    position:absolute;
+    right:0px;;
+    margin-top:50px;
+    margin-right:3px;
 }
 
 /*------------ HEADER --------------*/
