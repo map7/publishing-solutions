@@ -40,6 +40,7 @@ body {
     margin-left:80px;
 }
 
+h2 {color:#3498DB;}
 
 #page {
 }
@@ -47,14 +48,14 @@ body {
 .content_rigth {
     float:right;
     width:75%;
-    height:600px;
+    height:auto;
 
 }
 
 .content_left {
     float:right;
     width:25%;
-    height:600px;
+    height:auto;
     position:relative;
     left:0px;
 }
@@ -180,8 +181,45 @@ body {
     background-color: #4CAF50;
 }
 
+
+/*------------ CONTENT_PAGE --------------*/
+
+
+
 /*------------ FOOTER --------------*/
 
+footer {
+    background-color:#3498DB;
+    height:40px;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    padding:12px 0 12px 0;
+    color:white;
+}
+
+.footer_center {
+    position:absolute;
+    display:inline-block;
+    height:40px;
+    width:60%;
+    left:25%;
+}
+
+.footer_right {
+    display:inline-block;
+    height:40px;
+    width:30%;
+    position:absolute;
+    right:0px;
+}
+
+.footer_logo {
+    float:left;
+    width:30px;
+    height:40px;
+    margin-right:20px;
+}
 
 
 /*------------ OWL-CAROUSEL --------------*/
