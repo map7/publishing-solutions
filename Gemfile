@@ -60,3 +60,6 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 
 # The default authentication adapter
 gem 'refinerycms-authentication-devise', '~> 1.0'
+
+gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
+gem 'nivo-rails'
