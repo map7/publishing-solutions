@@ -1,1 +1,13 @@
-<%= render '/refinery/content_page' %>
+<div class="content_rigth">
+
+    <section id='body'>
+        <%=raw @page.content_for(:body) %>
+    </section>
+    <section id='side_body'>
+        <%=raw @page.content_for(:side_body) %>
+    </section>
+
+</div>
+<div class="content_left">
+    <%= image_tag("logo-color.png", class:"logo") %>
+</div>
