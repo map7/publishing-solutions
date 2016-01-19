@@ -66,9 +66,9 @@ body {
 }
 
 h1 {
-     letter-spacing:0.1px;
+    letter-spacing:0.2px;
     font-family:serif;
-    color:#ccc;
+    color:#3498DB;
     font-size:35px;
 }
 
@@ -259,17 +259,4 @@ footer {
 }
 
 
-/*------------ OWL-CAROUSEL --------------*/
-.owl-carousel {
-    background-color:#DDD;
-    width:100%;
-    margin-top:3px;
-    
-}
-
-
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
+/*------------ SLIDESHOW --------------*/
