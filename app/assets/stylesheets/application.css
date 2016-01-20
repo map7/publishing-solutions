@@ -262,31 +262,29 @@ footer {
 
 /*------------ SLIDESHOW --------------*/
 
-
-#slider {
+.slider-wrapper {
     z-index:-1000;
-    position: relative;
+    position:absolute;
     top: 0px;
     left: 0px;
-    max-width: none;
+    max-width:100%;
     max-height: 100%;
-    text-align:center;
-    vertical-align:middle;
-    font-size:40px;
+    overflow:hidden;
+    cursor:default;
 }
 
 .nivo-caption {
     position:absolute;
     left:0px;
-    top:20%;
+    top:0px;
     overflow:hidden;
     background:none;
     font-family:Serif;
     color:#FFF;
     font-weight:bold;
-    font-size:50px;
-    line-height:55px;
+    font-size:35px;
+    line-height:50px;
     text-align:center;
     z-index:8;
-    padding:0 25% 0 25%;
+    padding:28% 25% 0 25%;
 }
