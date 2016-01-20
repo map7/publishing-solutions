@@ -1,4 +1,7 @@
 <body>
+    <div class="logo_white">
+        <%= image_tag("logo-white.png", class:"logo-white") %>
+    </div>
     <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title('frontpage') %>
     <div id="wrapper">
         <div class="slider-wrapper">

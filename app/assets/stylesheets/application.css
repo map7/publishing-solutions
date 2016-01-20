@@ -101,6 +101,15 @@ h2 {
     margin-right:3px;
 }
 
+.logo-white {
+    position:absolute;
+    right:75%;
+    margin-top:50px;
+    margin-right:3px;
+}
+
+
+
 /*------------ HEADER --------------*/
 #header_container {
     border-top:6px solid #13b5ea;
@@ -282,9 +291,9 @@ footer {
     font-family:Serif;
     color:#FFF;
     font-weight:bold;
-    font-size:35px;
+    font-size:38px;
     line-height:50px;
     text-align:center;
     z-index:8;
-    padding:28% 25% 0 25%;
+    padding:28% 30% 0px 30%;
 }
