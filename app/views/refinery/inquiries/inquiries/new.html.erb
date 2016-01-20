@@ -1,0 +1,28 @@
+<div class="content_rigth">
+
+<% content_for :body do %>
+  <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
+
+  <div class='inquiries'>
+    <%= render "/refinery/inquiries/inquiries/form", inquiry: @inquiry %>
+  </div>
+<% end %>
+<%= render "/refinery/content_page" %>
+
+
+
+    <section id='body'>
+        <%=raw @page.content_for(:body) %>
+    </section>
+    <section id='side_body'>
+        <%=raw @page.content_for(:side_body) %>
+    </section>
+
+</div>
+<div class="content_left">
+    <%= image_tag("logo-color.png", class:"logo") %>
+</div>
+
+<footer>
+    <%= render "/refinery/footer" -%>
+</footer>
