@@ -17,7 +17,7 @@ module Refinery
 
         # Only allow a trusted parameter "white list" through.
         def backlist_params
-          params.require(:backlist).permit(:title, :author, :picture_id)
+          params.require(:backlist).permit(:title, :author, :picture_id, :genre_id)
         end
       end
     end
