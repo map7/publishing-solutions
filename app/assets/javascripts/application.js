@@ -21,9 +21,9 @@ $(".backlists").first().css("display", "inline")
 $(function() {
   $(".genre_link").each(function(){
     $(this).click(function(){
-      var genre = this.getAttribute('data-genre');
-      $(".backlists").hide(0, function(){ // First hide all
-        $("#" + genre).show();              // Show the one genre
+      var genre = this.getAttribute('data-genre'); // Get the genre we are talking about
+      $(".backlists").hide(0, function(){          // First hide all
+        $("#" + genre).show();  // Show the one genre after all have been hidden.
       });
     })
   })
