@@ -2,7 +2,8 @@
   <ul id="backlists">
     <% @backlists.each do |backlist| %>
       <li>
-        <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
+          <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
+          <%= image_fu backlist.picture, nil %>
       </li>
     <% end %>
   </ul>
