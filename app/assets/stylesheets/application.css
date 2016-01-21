@@ -18,17 +18,18 @@
  */ 
 
 body {
-  font-family: arial;
-  font-size: 100%;
-  line-height: 18px;
-  margin:0px;
-  padding:0px;
-  width:100%;
+    font-family: arial;
+    font-size: 100%;
+    line-height: 18px;
+    margin:0px;
+    padding:0px;
+    width:100%;
 }
 
 #side_body {
+    left:10%;
     padding: 20px;
-    margin:0 0 60px 40px;
+    margin:0 0 60px 0px;
     color:#777;
     letter-spacing:0.5px;
     line-height:1.2;
@@ -45,6 +46,7 @@ body {
 }
 
 #body {
+    float:left;
     width:60%;
     background:white;
     padding:20px 20px 20px 20px;
@@ -74,7 +76,15 @@ h1 {
 h2 {
     letter-spacing:0px;
     font-family:serif;
-    color:#3498DB;}
+    color:#3498DB;
+}
+
+h3 {
+    font-size:25px;
+    letter-spacing:0px;
+    font-family:serif;
+    color:#BBB;
+}
 
 #page {
 }
@@ -296,4 +306,86 @@ footer {
     text-align:center;
     z-index:8;
     padding:28% 30% 0px 30%;
+}
+
+/*------------ INQUIRIES FORM --------------*/
+
+.inquiries form {}
+
+.inquiries form label {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    width: 80px;
+    font-weight: bold;
+    float:left;
+    font-size:small;
+    padding-top:10px;
+}
+
+
+.inquiries form input, textarea {
+    margin-top:10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    resize:none;
+}
+
+.inquiries form input:focus, textarea:focus {
+    border: 1px solid #3498DB;
+}
+
+.inquiries textarea{
+    height:100px;
+    width: 250px;
+}
+
+.inquiries form input.text {
+    margin-top:2px;
+    width:250px;
+}
+
+.inquiries form input[type=submit],
+.inquiries form input[type=button]{
+    margin-left:80px;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #13b5ea;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    width:250px;
+}
+.inquiries form input[type=submit]:hover,
+.inquiries form input[type=button]:hover{
+    background: #3498DB;
+    color: #fff;
+}   
+
+.contact_text {
+    float:left;
+    border-right:#DDD solid 2px;
+    margin:-20px 50px 0 0;
+    padding-right:50px;
+    height:280px;
+}
+
+.form_title {
+    font-weight:bold;
+    font-style:italic;
+    margin:10px 0 20px 0;
+    color:#aaa;
 }
