@@ -1,10 +1,27 @@
 nb:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Lag en ny Genre
+            reorder: Endre rekkefølgen på Genres
+            reorder_done: Ferdig å endre rekkefølgen Genres
+          records:
+            title: Genres
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Genres enda. Klikk på "Lag en ny Genre" for
+              å legge til din første genre.
+          genre:
+            view_live_html: Vis hvordan denne genre ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne genre
+            delete: Fjern denne genre permanent
         backlists:
           actions:
             create_new: Lag en ny Backlist
@@ -13,17 +30,24 @@ nb:
           records:
             title: Backlists
             sorry_no_results: Beklager! Vi fant ikke noen resultater.
-            no_items_yet: Det er ingen Backlists enda. Klikk på "Lag en ny Backlist" for å legge til din første backlist.
+            no_items_yet: Det er ingen Backlists enda. Klikk på "Lag en ny Backlist"
+              for å legge til din første backlist.
           backlist:
-            view_live_html: Vis hvordan denne backlist ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            view_live_html: Vis hvordan denne backlist ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
             edit: Rediger denne backlist
             delete: Fjern denne backlist permanent
+      genres:
+        show:
+          other: Andre Genres
       backlists:
         show:
           other: Andre Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

@@ -1,10 +1,27 @@
 nl:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Nieuwe Genre toevoegen
+            reorder: De volgorde van de Genres wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Genre-volgorde
+          records:
+            title: Genres
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Genres. Druk op 'Nieuwe Genre toevoegen'
+              om de eerste toe te voegen.
+          genre:
+            view_live_html: Deze genre op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze genre
+            delete: Deze genre definitief verwijderen
         backlists:
           actions:
             create_new: Nieuwe Backlist toevoegen
@@ -13,17 +30,24 @@ nl:
           records:
             title: Backlists
             sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
-            no_items_yet: Er zijn nog geen Backlists. Druk op 'Nieuwe Backlist toevoegen' om de eerste toe te voegen.
+            no_items_yet: Er zijn nog geen Backlists. Druk op 'Nieuwe Backlist toevoegen'
+              om de eerste toe te voegen.
           backlist:
-            view_live_html: Deze backlist op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            view_live_html: Deze backlist op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
             edit: Bewerk deze backlist
             delete: Deze backlist definitief verwijderen
+      genres:
+        show:
+          other: Andere Genres
       backlists:
         show:
           other: Andere Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

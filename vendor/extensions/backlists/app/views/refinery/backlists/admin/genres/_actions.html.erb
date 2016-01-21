@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Backlists::Admin::GenresController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.backlists_admin_genres_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_backlists_admin_genre_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Backlists::Admin::GenresController.sortable? && ::Refinery::Backlists::Genre.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.backlists_admin_genres_path,
+                     t('.reorder', what:  "Genres"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.backlists_admin_genres_path,
+                      t('.reorder_done', what: "Genres"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

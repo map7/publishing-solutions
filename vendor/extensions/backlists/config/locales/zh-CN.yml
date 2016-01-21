@@ -1,31 +1,49 @@
 zh-CN:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: "建立新的 Genre"
+            reorder: "对 Genres 重新排序"
+            reorder_done: "对 Genres 的重新排序结束"
+          records:
+            title: Genres
+            sorry_no_results: "对不起，未找到结果。"
+            no_items_yet: 目前没有 Genres . 点击 "Add New Genre" 创建一个genre.
+          genre:
+            view_live_html: "查看 genre 的最新内容.<br/><em>(新窗口中打开)</em>"
+            edit: "编辑 genre"
+            delete: "永久删除 genre"
         backlists:
           actions:
-            create_new: 建立新的 Backlist
-            reorder: 对 Backlists 重新排序
-            reorder_done: 对 Backlists 的重新排序结束
+            create_new: "建立新的 Backlist"
+            reorder: "对 Backlists 重新排序"
+            reorder_done: "对 Backlists 的重新排序结束"
           records:
             title: Backlists
-            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
-
-            # There are no Backlists yet. Click "Add New Backlist" to add your first backlist.
+            sorry_no_results: "对不起，未找到结果。"
             no_items_yet: 目前没有 Backlists . 点击 "Add New Backlist" 创建一个backlist.
           backlist:
-            view_live_html: 查看 backlist 的最新内容.<br/><em>(新窗口中打开)</em>
-            edit: 编辑 backlist
-            delete: 永久删除 backlist
+            view_live_html: "查看 backlist 的最新内容.<br/><em>(新窗口中打开)</em>"
+            edit: "编辑 backlist"
+            delete: "永久删除 backlist"
+      genres:
+        show:
+          other: "其他 Genres"
       backlists:
         show:
-          other: 其他 Backlists
+          other: "其他 Backlists"
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

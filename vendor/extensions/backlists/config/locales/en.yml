@@ -1,10 +1,26 @@
 en:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Add New Genre
+            reorder: Reorder Genres
+            reorder_done: Done Reordering Genres
+          records:
+            title: Genres
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Genres yet. Click "Add New Genre" to add your
+              first genre.
+          genre:
+            view_live_html: View this genre live <br/><em>(opens in a new window)</em>
+            edit: Edit this genre
+            delete: Remove this genre forever
         backlists:
           actions:
             create_new: Add New Backlist
@@ -13,17 +29,23 @@ en:
           records:
             title: Backlists
             sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Backlists yet. Click "Add New Backlist" to add your first backlist.
+            no_items_yet: There are no Backlists yet. Click "Add New Backlist" to
+              add your first backlist.
           backlist:
             view_live_html: View this backlist live <br/><em>(opens in a new window)</em>
             edit: Edit this backlist
             delete: Remove this backlist forever
+      genres:
+        show:
+          other: Other Genres
       backlists:
         show:
           other: Other Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

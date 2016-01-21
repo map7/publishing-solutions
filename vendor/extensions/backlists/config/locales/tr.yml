@@ -1,10 +1,27 @@
 tr:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Yeni Ekle Genre
+            reorder: Tekrar sirala Genres
+            reorder_done: Tekrar siralama tamamlandiGenres
+          records:
+            title: Genres
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Genres yok henuz.  Tikla "Yeni Ekle Genre"
+              eklemek senin ilk genre.
+          genre:
+            view_live_html: Bunu canlu genre goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle genre
+            delete: Bunu Sil genre sonsuza dek
         backlists:
           actions:
             create_new: Yeni Ekle Backlist
@@ -13,17 +30,24 @@ tr:
           records:
             title: Backlists
             sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
-            no_items_yet: Herhangi bir Backlists yok henuz.  Tikla "Yeni Ekle Backlist" eklemek senin ilk backlist.
+            no_items_yet: Herhangi bir Backlists yok henuz.  Tikla "Yeni Ekle Backlist"
+              eklemek senin ilk backlist.
           backlist:
-            view_live_html: Bunu canlu backlist goruntule <br/><em>(yeni bir pencerede acar)</em>
+            view_live_html: Bunu canlu backlist goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
             edit: Bunu Duzenle backlist
             delete: Bunu Sil backlist sonsuza dek
+      genres:
+        show:
+          other: Diger Genres
       backlists:
         show:
           other: Diger Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

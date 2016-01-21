@@ -1,10 +1,26 @@
 it:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Aggiungi Nuovo Genre
+            reorder: Riordina Genres
+            reorder_done: Termina il Riordino di Genres
+          records:
+            title: Genres
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Genres. Clicca "Aggiungi Nuovo Genre"
+              per aggiungere il tuo primo genre.
+          genre:
+            view_live_html: Guarda live questo genre <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo genre
+            delete: Rimuovi per sempre questo genre
         backlists:
           actions:
             create_new: Aggiungi Nuovo Backlist
@@ -12,18 +28,24 @@ it:
             reorder_done: Termina il Riordino di Backlists
           records:
             title: Backlists
-            sorry_no_results: "Spiacenti! Nessun risultato trovato"
-            no_items_yet: Non ci sono ancora Backlists. Clicca "Aggiungi Nuovo Backlist" per aggiungere il tuo primo backlist.
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Backlists. Clicca "Aggiungi Nuovo Backlist"
+              per aggiungere il tuo primo backlist.
           backlist:
             view_live_html: Guarda live questo backlist <br/><em>(apre una nuova finestra)</em>
             edit: Modifica questo backlist
             delete: Rimuovi per sempre questo backlist
+      genres:
+        show:
+          other: Altri Genres
       backlists:
         show:
           other: Altri Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

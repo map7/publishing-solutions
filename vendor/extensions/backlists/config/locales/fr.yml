@@ -1,10 +1,26 @@
 fr:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Genre
+            reorder: Réordonner les Genres
+            reorder_done: Fin de réordonnancement des Genres
+          records:
+            title: Genres
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Genre. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Genre" pour créer votre premi(er/ère) genre.
+          genre:
+            view_live_html: Voir ce(t/tte) genre <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) genre
+            delete: Supprimer définitivement ce(t/tte) genre
         backlists:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Backlist
@@ -12,18 +28,24 @@ fr:
             reorder_done: Fin de réordonnancement des Backlists
           records:
             title: Backlists
-            sorry_no_results: "Désolé ! Aucun résultat."
-            no_items_yet: 'Il n''y a actuellement aucun(e) Backlist. Cliquer sur "Créer un(e) nouve(au/l/lle) Backlist" pour créer votre premi(er/ère) backlist.'
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Backlist. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Backlist" pour créer votre premi(er/ère) backlist.
           backlist:
             view_live_html: Voir ce(t/tte) backlist <br/><em>(Ouvre une nouvelle fenêtre)</em>
             edit: Modifier ce(t/tte) backlist
             delete: Supprimer définitivement ce(t/tte) backlist
+      genres:
+        show:
+          other: Autres Genres
       backlists:
         show:
           other: Autres Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture

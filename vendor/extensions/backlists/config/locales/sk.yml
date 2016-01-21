@@ -1,10 +1,26 @@
 sk:
   refinery:
     plugins:
+      genres:
+        title: Genres
       backlists:
         title: Backlists
     backlists:
       admin:
+        genres:
+          actions:
+            create_new: Pridať Genre
+            reorder: Preusporiadať Genres
+            reorder_done: Koniec radenia Genres
+          records:
+            title: Genres
+            sorry_no_results: "Ľutujeme, ale neboli nájdené žiadne výsledky."
+            no_items_yet: Nie sú vytvorené žiadne Genres. Kliknite na "Pridať Genre"
+              pre pridanie prvého genre.
+          genre:
+            view_live_html: Zobraziť náhľad genre<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť genre
+            delete: Zmazať genre
         backlists:
           actions:
             create_new: Pridať Backlist
@@ -12,18 +28,24 @@ sk:
             reorder_done: Koniec radenia Backlists
           records:
             title: Backlists
-            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
-            no_items_yet: Nie sú vytvorené žiadne Backlists. Kliknite na "Pridať Backlist" pre pridanie prvého backlist.
+            sorry_no_results: "Ľutujeme, ale neboli nájdené žiadne výsledky."
+            no_items_yet: Nie sú vytvorené žiadne Backlists. Kliknite na "Pridať Backlist"
+              pre pridanie prvého backlist.
           backlist:
             view_live_html: Zobraziť náhľad backlist<br/><em>(otvorí sa v novom okne)</em>
             edit: Upraviť backlist
             delete: Zmazať backlist
+      genres:
+        show:
+          other: Daľšie Genres
       backlists:
         show:
           other: Daľšie Backlists
   activerecord:
     attributes:
-      'refinery/backlists/backlist':
+      refinery/backlists/genre:
+        name: Name
+      refinery/backlists/backlist:
         title: Title
         author: Author
         picture: Picture
