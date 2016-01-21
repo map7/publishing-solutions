@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160121031857) do
+ActiveRecord::Schema.define(version: 20160121032017) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20160121031857) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "genre_id"
   end
 
   create_table "refinery_backlists_genres", force: :cascade do |t|

@@ -7,7 +7,8 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :picture, :class_name => '::Refinery::Image'
-
+      belongs_to :genre
+      
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       #
       #   acts_as_indexed :fields => [:title]
