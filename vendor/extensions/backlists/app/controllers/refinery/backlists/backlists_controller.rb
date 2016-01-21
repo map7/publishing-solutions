@@ -3,6 +3,7 @@ module Refinery
     class BacklistsController < ::ApplicationController
 
       before_action :find_all_backlists
+      before_action :find_all_genres
       before_action :find_page
 
       def index
@@ -20,6 +21,10 @@ module Refinery
       end
 
     protected
+
+    def find_all_genres
+      @genres = Genre.order('name ASC')
+    end
 
       def find_all_backlists
         @backlists = Backlist.order('position ASC')

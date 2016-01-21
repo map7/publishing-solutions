@@ -297,3 +297,7 @@ footer {
     z-index:8;
     padding:28% 30% 0px 30%;
 }
+
+.backlists {
+    display:none;
+}

@@ -1,12 +1,21 @@
 <% content_for :body do %>
-  <ul id="backlists">
-    <% @backlists.each do |backlist| %>
-      <li>
-          <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
-          <%= image_fu backlist.picture, nil %>
-      </li>
-    <% end %>
-  </ul>
+    <ul id="genres">
+        <% @genres.each do |genre| %>
+            <%= link_to genre.name, "#/#{genre.name}", class: "genre_link" %>
+        <% end %>
+
+        <% @genres.each do |genre| %>
+            <ul id="<%= genre.name %>" class="backlists">
+                <% genre.backlists.each do |backlist| %>
+                    <li>
+                        <%= image_fu backlist.picture, nil %>
+                        <br />
+                        <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
+                    </li>
+                <% end %>
+            </ul>
+        <% end %>
+    </ul>
 <% end %>
 
 <%= render '/refinery/content_page' %>

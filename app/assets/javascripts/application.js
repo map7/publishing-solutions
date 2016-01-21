@@ -15,3 +15,12 @@
 //= require turbolinks
 //= require nivo
 //= require_tree .
+
+$(function() {
+  $('.genre_link').click(function(){
+    $(".backlists").hide(300, function(){ // First hide all
+      var genre = window.location.hash.substring(2);
+      $("#" + genre).show();              // Show the one genre
+    });
+  })
+})
