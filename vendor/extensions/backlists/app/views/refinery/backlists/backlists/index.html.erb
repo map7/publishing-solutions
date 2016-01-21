@@ -1,27 +1,17 @@
-<% content_for :body do %>
-    <ul id="genres">
+<div class="content_rigth">
 
-        <!-- Genre links -->
-        <%= link_to "All", "#", class: "genre_link", data: {genre: "all"} %>
-        <% @genres.each do |genre| %>
-            <%= link_to genre.name, "#/#{genre.name}", class: "genre_link", data: {genre: genre.name} %>
-        <% end %>
+    <% content_for :body do %>
+        <ul id="genres">
 
-        <!-- All books -->
-        <ul id="all" class="backlists">
-            <% @backlists.each do |backlist| %>
-                <li>
-                    <%= image_fu backlist.picture, nil %>
-                    <br />
-                    <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
-                </li>
+            <!-- Genre links -->
+            <%= link_to "All", "#", class: "genre_link", data: {genre: "all"} %>
+            <% @genres.each do |genre| %>
+                <%= link_to genre.name, "#/#{genre.name}", class: "genre_link", data: {genre: genre.name} %>
             <% end %>
-        </ul>
 
-        <!-- Books per genre -->
-        <% @genres.each_with_index do |genre| %>
-            <ul id="<%= genre.name %>" class="backlists">
-                <% genre.backlists.each do |backlist| %>
+            <!-- All books -->
+            <ul id="all" class="backlists">
+                <% @backlists.each do |backlist| %>
                     <li>
                         <%= image_fu backlist.picture, nil %>
                         <br />
@@ -29,9 +19,30 @@
                     </li>
                 <% end %>
             </ul>
-        <% end %>
-    </ul>
-<% end %>
 
-<%= render '/refinery/content_page' %>
+            <!-- Books per genre -->
+            <% @genres.each_with_index do |genre| %>
+                <ul id="<%= genre.name %>" class="backlists">
+                    <% genre.backlists.each do |backlist| %>
+                        <li>
+                            <%= image_fu backlist.picture, nil %>
+                            <br />
+                            <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
+                        </li>
+                    <% end %>
+                </ul>
+            <% end %>
+        </ul>
+    <% end %>
+
+    <%= render '/refinery/content_page' %>
+
+</div>
+<div class="content_left">
+    <%= image_tag("logo-color.png", class:"logo") %>
+</div>
+
+<footer>
+    <%= render "/refinery/footer" -%>
+</footer>
 
