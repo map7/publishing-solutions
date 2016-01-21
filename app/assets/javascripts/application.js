@@ -16,11 +16,15 @@
 //= require nivo
 //= require_tree .
 
+$(".backlists").first().css("display", "inline")
+
 $(function() {
-  $('.genre_link').click(function(){
-    $(".backlists").hide(300, function(){ // First hide all
-      var genre = window.location.hash.substring(2);
-      $("#" + genre).show();              // Show the one genre
-    });
+  $(".genre_link").each(function(){
+    $(this).click(function(){
+      var genre = this.getAttribute('data-genre');
+      $(".backlists").hide(0, function(){ // First hide all
+        $("#" + genre).show();              // Show the one genre
+      });
+    })
   })
 })
