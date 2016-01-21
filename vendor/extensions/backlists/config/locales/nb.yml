@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      backlists:
+        title: Backlists
+    backlists:
+      admin:
+        backlists:
+          actions:
+            create_new: Lag en ny Backlist
+            reorder: Endre rekkefølgen på Backlists
+            reorder_done: Ferdig å endre rekkefølgen Backlists
+          records:
+            title: Backlists
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Backlists enda. Klikk på "Lag en ny Backlist" for å legge til din første backlist.
+          backlist:
+            view_live_html: Vis hvordan denne backlist ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne backlist
+            delete: Fjern denne backlist permanent
+      backlists:
+        show:
+          other: Andre Backlists
+  activerecord:
+    attributes:
+      'refinery/backlists/backlist':
+        title: Title
+        author: Author
+        picture: Picture

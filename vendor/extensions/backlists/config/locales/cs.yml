@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      backlists:
+        title: Backlists
+    backlists:
+      admin:
+        backlists:
+          actions:
+            create_new: Přidat Backlist
+            reorder: Řadit Backlists
+            reorder_done: Konec řazení Backlists
+          records:
+            title: Backlists
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Backlists. Zvolte "Přidat Backlist" pro přidání prvního backlist.
+          backlist:
+            view_live_html: Zobrazit náhled backlist<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit backlist
+            delete: Smazat backlist
+      backlists:
+        show:
+          other: Další Backlists
+  activerecord:
+    attributes:
+      'refinery/backlists/backlist':
+        title: Title
+        author: Author
+        picture: Picture

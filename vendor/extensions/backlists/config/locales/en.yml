@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      backlists:
+        title: Backlists
+    backlists:
+      admin:
+        backlists:
+          actions:
+            create_new: Add New Backlist
+            reorder: Reorder Backlists
+            reorder_done: Done Reordering Backlists
+          records:
+            title: Backlists
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Backlists yet. Click "Add New Backlist" to add your first backlist.
+          backlist:
+            view_live_html: View this backlist live <br/><em>(opens in a new window)</em>
+            edit: Edit this backlist
+            delete: Remove this backlist forever
+      backlists:
+        show:
+          other: Other Backlists
+  activerecord:
+    attributes:
+      'refinery/backlists/backlist':
+        title: Title
+        author: Author
+        picture: Picture

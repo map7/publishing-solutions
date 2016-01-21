@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      backlists:
+        title: Backlists
+    backlists:
+      admin:
+        backlists:
+          actions:
+            create_new: Nieuwe Backlist toevoegen
+            reorder: De volgorde van de Backlists wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Backlist-volgorde
+          records:
+            title: Backlists
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Backlists. Druk op 'Nieuwe Backlist toevoegen' om de eerste toe te voegen.
+          backlist:
+            view_live_html: Deze backlist op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze backlist
+            delete: Deze backlist definitief verwijderen
+      backlists:
+        show:
+          other: Andere Backlists
+  activerecord:
+    attributes:
+      'refinery/backlists/backlist':
+        title: Title
+        author: Author
+        picture: Picture

@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      backlists:
+        title: Backlists
+    backlists:
+      admin:
+        backlists:
+          actions:
+            create_new: Yeni Ekle Backlist
+            reorder: Tekrar sirala Backlists
+            reorder_done: Tekrar siralama tamamlandiBacklists
+          records:
+            title: Backlists
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Backlists yok henuz.  Tikla "Yeni Ekle Backlist" eklemek senin ilk backlist.
+          backlist:
+            view_live_html: Bunu canlu backlist goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle backlist
+            delete: Bunu Sil backlist sonsuza dek
+      backlists:
+        show:
+          other: Diger Backlists
+  activerecord:
+    attributes:
+      'refinery/backlists/backlist':
+        title: Title
+        author: Author
+        picture: Picture

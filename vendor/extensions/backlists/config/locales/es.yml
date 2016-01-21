@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      backlists:
+        title: Backlists
+#        article: masculino/femenino
+    backlists:
+      admin:
+        backlists:
+          actions:
+            create_new: Crear nuevo backlist
+            reorder: Reordenar backlists
+            reorder_done: Reordenación de backlists completada
+          records:
+            title: Backlists
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay backlists todavía. Pulsa en "Crear nuevo Backlist" para crear tu primer backlist.
+          backlist:
+            view_live_html: Ver este backlist como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este backlist
+            delete: Borrar este backlist para siempre
+      backlists:
+        show:
+          other: Otros backlists
+  activerecord:
+    attributes:
+      'refinery/backlists/backlist':
+        title: Title
+        author: Author
+        picture: Picture

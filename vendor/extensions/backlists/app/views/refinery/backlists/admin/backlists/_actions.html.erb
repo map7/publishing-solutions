@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Backlists::Admin::BacklistsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.backlists_admin_backlists_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_backlists_admin_backlist_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Backlists::Admin::BacklistsController.sortable? && ::Refinery::Backlists::Backlist.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.backlists_admin_backlists_path,
+                     t('.reorder', what:  "Backlists"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.backlists_admin_backlists_path,
+                      t('.reorder_done', what: "Backlists"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>
