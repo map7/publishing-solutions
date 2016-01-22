@@ -36,13 +36,13 @@ body {
 }
 
 #side_body a {
-    color:#3498DB;
+    color:#ddd;
     font-weight:bold;
     letter-spacing:normal;
 }
 
 #side_body a:visited {
-    color:#3498DB;
+    color:#ddd;
 }
 
 #body {
@@ -57,13 +57,15 @@ body {
 
 }
 #body a {
-    color:#3498DB;
+    color:#404650;
     font-weight:bold;
     letter-spacing:normal;
+    text-decoration:none;
+    font-family:serif;
 }
 
 #body a:visited {
-    color:#3498DB;
+    color:#404650;
 }
 
 h1 {
@@ -95,6 +97,7 @@ h3 {
     height:auto;
 
 }
+
 
 .content_left {
     float:right;
@@ -316,6 +319,49 @@ footer {
     display:none;
 }
 
+/*------------ BACKLIST PRODUCTS --------------*/
+.form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 8px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.genre_link  {
+    padding:20px 15px 0px 0;
+}
+
+#genres .genre_link a {
+    font-size:40px!important;
+    
+}
+
+
+.backlists li {
+    display:inline-block;
+    margin-top:20px;
+
+}
+
+.product_title {
+    font-family:serif;
+    font-style:italic;
+    color:#222;
+    font-size:small;
+    font-weight:bold;
+    text-align:center;
+}
+
+.product_author {
+    font-family:serif;
+    font-style:italic;
+    color:#222;
+    font-size:small;
+    text-align:center;
+}
+
 /*------------ INQUIRIES FORM --------------*/
 
 .inquiries form {}
@@ -330,10 +376,6 @@ footer {
     padding-top:10px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> design of contact page
 .inquiries form input, textarea {
     margin-top:10px;
     box-sizing: border-box;

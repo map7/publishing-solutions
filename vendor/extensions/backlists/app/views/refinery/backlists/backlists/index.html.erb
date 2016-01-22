@@ -2,34 +2,43 @@
 
     <% content_for :body do %>
         <ul id="genres">
+            
+            <div class="form-style-2-heading"></div>
 
             <!-- Genre links -->
             <%= link_to "All", "#", class: "genre_link", data: {genre: "all"} %>
             <% @genres.each do |genre| %>
                 <%= link_to genre.name, "#/#{genre.name}", class: "genre_link", data: {genre: genre.name} %>
             <% end %>
-
+            
             <!-- All books -->
             <ul id="all" class="backlists">
-                <% @backlists.each do |backlist| %>
-                    <li>
-                        <%= image_fu backlist.picture, nil %>
+                <% @backlists.each do |backlist| %><li>
+                        <%= image_fu(backlist.picture, "120x160#") %>
                         <br />
-                        <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
-                    </li>
-                <% end %>
+                        <div class="product_title">
+                            <%=raw backlist.title %>
+                        </div>
+                        <div class="product_author">
+                            <%=raw backlist.author %>
+                        </div>
+                    </li><% end %>
             </ul>
 
             <!-- Books per genre -->
             <% @genres.each_with_index do |genre| %>
                 <ul id="<%= genre.name %>" class="backlists">
-                    <% genre.backlists.each do |backlist| %>
-                        <li>
-                            <%= image_fu backlist.picture, nil %>
-                            <br />
-                            <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
-                        </li>
-                    <% end %>
+                    <% genre.backlists.each do |backlist| %><li>
+                       
+                            <%= image_fu(backlist.picture, "120x160#") %>
+                        <br />
+                        <div class="product_title">
+                            <%=raw backlist.title %>
+                        </div>
+                        <div class="product_autho">
+                            <%=raw backlist.author %>
+                        </div>
+                    </li><% end %>
                 </ul>
             <% end %>
         </ul>
