@@ -14,6 +14,8 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require nivo
+ *= require owl.carousel
+ *= require owl.theme
  *= require_self
  */ 
 
@@ -332,12 +334,6 @@ footer {
 .genre_link  {
     padding:20px 15px 0px 0;
 }
-
-#genres .genre_link a {
-    font-size:40px!important;
-    
-}
-
 
 .backlists li {
     display:inline-block;

@@ -66,3 +66,5 @@ gem 'nivo-rails'
 gem 'refinerycms-inquiries', github: 'refinery/refinerycms-inquiries', branch: 'master'
 
 gem 'refinerycms-backlists', path: 'vendor/extensions'
+
+gem 'owlcarousel-rails'
