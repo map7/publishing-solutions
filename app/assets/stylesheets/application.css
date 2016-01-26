@@ -14,6 +14,8 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require nivo
+ *= require owl.carousel
+ *= require owl.theme
  *= require_self
  */ 
 
@@ -36,13 +38,13 @@ body {
 }
 
 #side_body a {
-    color:#3498DB;
+    color:#ddd;
     font-weight:bold;
     letter-spacing:normal;
 }
 
 #side_body a:visited {
-    color:#3498DB;
+    color:#ddd;
 }
 
 #body {
@@ -57,13 +59,15 @@ body {
 
 }
 #body a {
-    color:#3498DB;
+    color:#404650;
     font-weight:bold;
     letter-spacing:normal;
+    text-decoration:none;
+    font-family:serif;
 }
 
 #body a:visited {
-    color:#3498DB;
+    color:#404650;
 }
 
 h1 {
@@ -95,6 +99,7 @@ h3 {
     height:auto;
 
 }
+
 
 .content_left {
     float:right;
@@ -193,7 +198,7 @@ h3 {
 }
 
 .nav_bar {
-    background-color:#333333;
+    background-color:#404650;
     height:42px;
     width:100%;
     position:absolute;
@@ -219,7 +224,7 @@ h3 {
 {
     display:inline-block;
     padding:12px 16px;
-    background:#333333;
+    background:#404650;
     color:white;
     text-decoration:none;
     text-align:center;
@@ -292,6 +297,10 @@ footer {
     cursor:default;
 }
 
+.slider-wrapper img{
+    margin-top:250px;
+}
+
 .nivo-caption {
     position:absolute;
     left:0px;
@@ -312,6 +321,43 @@ footer {
     display:none;
 }
 
+/*------------ BACKLIST PRODUCTS --------------*/
+.form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 8px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.genre_link  {
+    padding:20px 15px 0px 0;
+}
+
+.backlists li {
+    display:inline-block;
+    margin-top:20px;
+
+}
+
+.product_title {
+    font-family:serif;
+    font-style:italic;
+    color:#222;
+    font-size:small;
+    font-weight:bold;
+    text-align:center;
+}
+
+.product_author {
+    font-family:serif;
+    font-style:italic;
+    color:#222;
+    font-size:small;
+    text-align:center;
+}
+
 /*------------ INQUIRIES FORM --------------*/
 
 .inquiries form {}
@@ -325,7 +371,6 @@ footer {
     font-size:small;
     padding-top:10px;
 }
-
 
 .inquiries form input, textarea {
     margin-top:10px;
@@ -377,7 +422,7 @@ footer {
 .inquiries form input[type=button]:hover{
     background: #3498DB;
     color: #fff;
-}   
+}
 
 .contact_text {
     float:left;

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require nivo
+//= require owl.carousel
 //= require_tree .
 
 $(".backlists").first().css("display", "inline")
@@ -28,3 +29,5 @@ $(function() {
     })
   })
 })
+
+$(".owl-carousel").owlCarousel();

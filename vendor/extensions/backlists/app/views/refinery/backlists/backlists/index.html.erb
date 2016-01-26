@@ -1,37 +1,72 @@
-<% content_for :body do %>
-    <ul id="genres">
+<div class="content_rigth">
 
-        <!-- Genre links -->
-        <%= link_to "All", "#", class: "genre_link", data: {genre: "all"} %>
-        <% @genres.each do |genre| %>
-            <%= link_to genre.name, "#/#{genre.name}", class: "genre_link", data: {genre: genre.name} %>
-        <% end %>
+    <% content_for :body do %>
+        <div id="genres">
+            
+            <div class="form-style-2-heading"></div>
 
-        <!-- All books -->
-        <ul id="all" class="backlists">
-            <% @backlists.each do |backlist| %>
-                <li>
-                    <%= image_fu backlist.picture, nil %>
-                    <br />
-                    <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
-                </li>
+            <!-- Genre links -->
+            <%= link_to "All", "#", class: "genre_link", data: {genre: "all"} %>
+            <% @genres.each do |genre| %>
+                <%= link_to genre.name, "#/#{genre.name}", class: "genre_link", data: {genre: genre.name} %>
             <% end %>
-        </ul>
 
-        <!-- Books per genre -->
-        <% @genres.each_with_index do |genre| %>
-            <ul id="<%= genre.name %>" class="backlists">
-                <% genre.backlists.each do |backlist| %>
-                    <li>
-                        <%= image_fu backlist.picture, nil %>
-                        <br />
-                        <%= link_to backlist.title, refinery.backlists_backlist_path(backlist) %>
-                    </li>
-                <% end %>
+            
+            <!-- All books -->
+            <ul id="all" class="backlists">  
+                <div class="owl-carousel">
+                    <% @backlists.each do |backlist| %>
+                        <div>
+                            <li>
+                                <%= image_fu(backlist.picture, "120x160#") %>
+                                <br />
+                                <div class="product_title">
+                                    <%=raw backlist.title %>
+                                </div>
+                                <div class="product_author">
+                                    <%=raw backlist.author %>
+                                </div>
+                            </li>
+                        </div>
+                    <% end %>
+                </div>
             </ul>
-        <% end %>
-    </ul>
-<% end %>
+            
 
-<%= render '/refinery/content_page' %>
+            <!-- Books per genre -->
+            
+            <% @genres.each_with_index do |genre| %>
+                <ul id="<%= genre.name %>" class="backlists">
+                    <div class="owl-carousel">
+                        <% genre.backlists.each do |backlist| %>
+                            <div>
+                                <li>
+                                    <%= image_fu(backlist.picture, "120x160#") %>
+                                    <br />
+                                    <div class="product_title">
+                                        <%=raw backlist.title %>
+                                    </div>
+                                    <div class="product_author">
+                                        <%=raw backlist.author %>
+                                    </div>
+                                </li>
+                            </div>
+                        <% end %>
+                    </div>
+                </ul>
+            <% end %>
+            
+        </div>
+    <% end %>
+    
+    <%= render '/refinery/content_page' %>
+
+</div>
+<div class="content_left">
+    <%= image_tag("logo-color.png", class:"logo") %>
+</div>
+
+<footer>
+    <%= render "/refinery/footer" %>
+</footer>
 
