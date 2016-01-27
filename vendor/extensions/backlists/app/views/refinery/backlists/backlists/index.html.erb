@@ -6,39 +6,15 @@
             <div class="form-style-2-heading"></div>
 
             <!-- Genre links -->
-            <%= link_to "All", "#", class: "genre_link", data: {genre: "all"} %>
-            <% @genres.each do |genre| %>
-                <%= link_to genre.name, "#/#{genre.name}", class: "genre_link", data: {genre: genre.name} %>
+            <% @all_genres.each do |genre| %>
+                <%= link_to genre[:name], "#/#{genre[:name]}", class: "genre_link", data: {genre: genre[:name]} %>
             <% end %>
 
-            
-            <!-- All books -->
-            <ul id="all" class="backlists">  
-                <div class="owl-carousel">
-                    <% @backlists.each do |backlist| %>
-                        <div>
-                            <li>
-                                <%= image_fu(backlist.picture, "120x160#") %>
-                                <br />
-                                <div class="product_title">
-                                    <%=raw backlist.title %>
-                                </div>
-                                <div class="product_author">
-                                    <%=raw backlist.author %>
-                                </div>
-                            </li>
-                        </div>
-                    <% end %>
-                </div>
-            </ul>
-            
-
             <!-- Books per genre -->
-            
-            <% @genres.each_with_index do |genre| %>
-                <ul id="<%= genre.name %>" class="backlists">
+            <% @all_genres.each do |genre| %>
+                <div id="<%= genre[:name] %>" class="backlists">
                     <div class="owl-carousel">
-                        <% genre.backlists.each do |backlist| %>
+                        <% genre[:backlists].each do |backlist| %>
                             <div>
                                 <li>
                                     <%= image_fu(backlist.picture, "120x160#") %>
@@ -53,7 +29,7 @@
                             </div>
                         <% end %>
                     </div>
-                </ul>
+                </div>
             <% end %>
             
         </div>
