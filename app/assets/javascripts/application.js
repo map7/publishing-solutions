@@ -35,5 +35,6 @@ $(".owl-carousel").owlCarousel(
     items: 5,
     itemsDesktop : [500,3],
     itemsDesktopSmall : [400,3]
+    
   }
 );
