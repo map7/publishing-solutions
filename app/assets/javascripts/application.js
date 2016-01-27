@@ -17,7 +17,7 @@
 //= require owl.carousel
 //= require_tree .
 
-$(".backlists").first().css("display", "inline")
+$(".backlists").first().css("display", "block")
 
 $(function() {
   $(".genre_link").each(function(){
@@ -30,4 +30,10 @@ $(function() {
   })
 })
 
-$(".owl-carousel").owlCarousel();
+$(".owl-carousel").owlCarousel(
+  {
+    items: 5,
+    itemsDesktop : [500,3],
+    itemsDesktopSmall : [400,3]
+  }
+);

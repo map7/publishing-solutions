@@ -33,12 +33,13 @@ module Refinery
         find_all_genres
         find_all_backlists
 
-        @all_genres = [{name: "", backlists: []}]
-        @all_genres <<
+        @all_genres =[
           {
             name: "All",
             backlists: @backlists
           }
+        ]
+
         @genres.map{|g|
           @all_genres << {
             name: g.name,
