@@ -32,9 +32,17 @@ $(function() {
 
 $(".owl-carousel").owlCarousel(
   {
-    items: 5,
-    itemsDesktop : [500,3],
-    itemsDesktopSmall : [400,3]
-    
+  itemsCustom : [
+    [450, 1],
+    [600, 2],
+    [700, 2],
+    [800, 3],
+    [900, 3],
+    [1000, 3],
+    [1200, 4],
+    [1400, 5],
+    [1600, 6]
+      ],
+      navigation : false
   }
 );

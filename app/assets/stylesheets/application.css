@@ -90,6 +90,8 @@ h3 {
     color:#BBB;
 }
 
+.active {background:none;}
+
 #page {
 }
 
@@ -341,6 +343,12 @@ footer {
 
 }
 
+.backlists li img{
+    margin-right:10px;
+    display:block;
+
+}
+
 .product_title {
     font-family:serif;
     font-style:italic;
@@ -356,6 +364,16 @@ footer {
     color:#222;
     font-size:small;
     text-align:center;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {}
+
+.owl-theme .owl-controls .owl-page span {
+    background:#3498DB;
+}
+
+.active {
+    background:none;
 }
 
 /*------------ INQUIRIES FORM --------------*/
