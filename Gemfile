@@ -64,9 +64,9 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
 gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
-gem 'nivo-rails'
 gem 'refinerycms-inquiries'#, github: 'refinery/refinerycms-inquiries', branch: 'master'
 
 gem 'refinerycms-backlists', path: 'vendor/extensions'
 
-gem 'owlcarousel-rails'
+gem 'nivo-rails'                # Frontpage slideshow/carousel
+gem 'owlcarousel-rails'         # Backlists slideshow/carousel
