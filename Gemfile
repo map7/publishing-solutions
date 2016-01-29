@@ -50,7 +50,7 @@ group :development do
 end
 
 # FIXME: Change this to a stable version number when refinerycms get their shit together.
-gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
+gem 'refinerycms'#, git: 'https://github.com/refinery/refinerycms', branch: 'master'
 
 gem 'quiet_assets', group: :development
 
