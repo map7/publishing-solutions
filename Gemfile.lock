@@ -9,17 +9,6 @@ GIT
       refinerycms-core (~> 3.0.0)
       refinerycms-images (~> 3.0.0)
 
-GIT
-  remote: git://github.com/refinery/refinerycms-inquiries.git
-  revision: c849ffd8cc8a3d6617b3e7a050619a99b7519106
-  branch: master
-  specs:
-    refinerycms-inquiries (3.0.0)
-      actionmailer (~> 4.2.4)
-      filters_spam (~> 0.2)
-      refinerycms-core (~> 3.0.0)
-      refinerycms-settings (~> 3.0.0)
-
 PATH
   remote: vendor/extensions
   specs:
@@ -204,6 +193,11 @@ GEM
       dragonfly (~> 1.0.0)
       globalize (>= 4.0.0, < 5.2)
       refinerycms-core (= 3.0.1)
+    refinerycms-inquiries (3.0.0)
+      actionmailer (~> 4.2.4)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-settings (~> 3.0.0)
     refinerycms-pages (3.0.1)
       awesome_nested_set (~> 3.0.0)
       babosa (!= 0.3.6)
@@ -289,7 +283,7 @@ DEPENDENCIES
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-backlists!
   refinerycms-image_slideshows!
-  refinerycms-inquiries!
+  refinerycms-inquiries
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
