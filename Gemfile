@@ -52,7 +52,7 @@ end
 # FIXME: Change this to a stable version number when refinerycms get their shit together.
 gem 'refinerycms'#, git: 'https://github.com/refinery/refinerycms', branch: 'master'
 
-gem 'quiet_assets', group: :development
+gem 'quiet_assets', group: :development # Removes asset logs
 
 # Add support for searching inside Refinery's admin interface.
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']
@@ -63,9 +63,7 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 # The default authentication adapter
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
-#gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
-gem 'refinerycms-image_slideshows', git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
-#gem 'refinerycms-image_slideshows', '~> 3.0.0'
+gem 'refinerycms-image_slideshows',git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
 gem 'refinerycms-inquiries'#, github: 'refinery/refinerycms-inquiries', branch: 'master'
 
 gem 'refinerycms-backlists', path: 'vendor/extensions'
