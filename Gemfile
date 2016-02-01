@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-
-gem 'puma'                      # web server for concurrency
+group :production do
+  gem 'puma'                      # web server for concurrency
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
