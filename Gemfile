@@ -63,7 +63,9 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 # The default authentication adapter
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
-gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
+#gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
+gem 'refinerycms-image_slideshows', git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
+#gem 'refinerycms-image_slideshows', '~> 3.0.0'
 gem 'refinerycms-inquiries'#, github: 'refinery/refinerycms-inquiries', branch: 'master'
 
 gem 'refinerycms-backlists', path: 'vendor/extensions'
