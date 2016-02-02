@@ -37,7 +37,7 @@
   <% end %>
 
   <div class='field message_field'>
-    <%= f.label :message, :class => 'placeholder-fallback required' %>
+    <%= f.label :text, :class => 'placeholder-fallback required' %>
     <%= f.text_area :message, :rows => 8, :required => 'required',
       :placeholder => (t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders) %>
   </div>
