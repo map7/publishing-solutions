@@ -270,6 +270,10 @@ footer {
     left:25%;
 }
 
+.footer_center a{
+    color:white;
+}
+
 .footer_right {
     display:inline-block;
     height:40px;
