@@ -3,6 +3,7 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-backlists'
+  s.author            = 'Michael Pope'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Backlists extension for Refinery CMS'
   s.date              = '2016-01-21'
