@@ -21,5 +21,11 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode  
+  pool: 5
+  database: publishing_solutions_production
+  template: template0
+  host: localhost
+  username: publishing_solutions
+  password: <%= ENV['PUBLISHING_SOLUTIONS_DATABASE_PASSWORD'] %>
