@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'publishing_solutions_website'
+set :application, 'publishing-solutions.com.au'
 set :repo_url, 'ssh://map7@192.168.200.4:22/~/code/publishing_solutions_website'
 #set :repo_url, 'git@example.com:me/my_repo.git'
 
@@ -36,7 +36,6 @@ set :repo_url, 'ssh://map7@192.168.200.4:22/~/code/publishing_solutions_website'
 # set :keep_releases, 5
 
 namespace :deploy do
-
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
