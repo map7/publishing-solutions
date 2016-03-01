@@ -90,6 +90,8 @@ h3 {
     color:#BBB;
 }
 
+.active {background:none;}
+
 #page {
 }
 
@@ -268,6 +270,10 @@ footer {
     left:25%;
 }
 
+.footer_center a{
+    color:white;
+}
+
 .footer_right {
     display:inline-block;
     height:40px;
@@ -288,33 +294,37 @@ footer {
 
 .slider-wrapper {
     z-index:-1000;
-    position:absolute;
-    top: 0px;
-    left: 0px;
-    max-width:100%;
-    max-height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    max-width:auto;
+    max-height:auto;
+    width:2300px;
+    height:auto;
     overflow:hidden;
     cursor:default;
+    
 }
 
 .slider-wrapper img{
-    margin-top:250px;
+    margin-top:225px;
 }
 
 .nivo-caption {
-    position:absolute;
-    left:0px;
-    top:0px;
+    position:fixed;
+    left:0;
+    right:0;
+    top:600px;
     overflow:hidden;
     background:none;
     font-family:Serif;
     color:#FFF;
     font-weight:bold;
-    font-size:38px;
+    font-size:48px;
     line-height:50px;
     text-align:center;
     z-index:8;
-    padding:28% 30% 0px 30%;
+    padding:0% 32% 0px 32%;
 }
 
 .backlists {
@@ -341,6 +351,12 @@ footer {
 
 }
 
+.backlists li img{
+    margin-right:10px;
+    display:block;
+
+}
+
 .product_title {
     font-family:serif;
     font-style:italic;
@@ -358,14 +374,30 @@ footer {
     text-align:center;
 }
 
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {}
+
+.owl-theme .owl-controls .owl-page span {
+    background:#3498DB;
+    margin-top:25px;
+}
+
+.active {
+    background:none;
+}
+
 /*------------ INQUIRIES FORM --------------*/
 
-.inquiries form {}
+.inquiries form {
+    position:relative;
+    left:350px;
+}
+
+.new_inquiry {width:280px;}
 
 .inquiries form label {
     display: block;
     margin: 0px 0px 0px 0px;
-    width: 80px;
+    width: 60px;
     font-weight: bold;
     float:left;
     font-size:small;
@@ -395,17 +427,17 @@ footer {
 
 .inquiries textarea{
     height:100px;
-    width: 250px;
+    width: 220px;
 }
 
 .inquiries form input.text {
     margin-top:2px;
-    width:250px;
+    width:220px;
 }
 
 .inquiries form input[type=submit],
 .inquiries form input[type=button]{
-    margin-left:80px;
+    margin-left:60px;
     border: none;
     padding: 8px 15px 8px 15px;
     background: #13b5ea;
@@ -416,7 +448,7 @@ footer {
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    width:250px;
+    width:220px;
 }
 .inquiries form input[type=submit]:hover,
 .inquiries form input[type=button]:hover{
@@ -425,6 +457,7 @@ footer {
 }
 
 .contact_text {
+    position:absolute;
     float:left;
     border-right:#DDD solid 2px;
     margin:-20px 50px 0 0;

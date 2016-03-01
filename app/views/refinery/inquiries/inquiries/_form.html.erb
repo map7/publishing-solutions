@@ -3,8 +3,12 @@
     <p>Publishing Solutions is located at:</p>
     <p><strong>PO Box 2081<br />Oak Park VIC 3046<br />Australia</strong>
     </p>
-    <p><strong>Phone: </strong>+613 8838 0731<br /><strong>Fax:</strong> +613 9005 2067<br /></p>
+    <p><strong>Phone: </strong>+613 8838 0731<br /><strong>Fax:</strong> +613 9005 2067<br /><br></p>
+    <a href="/contact/privacy-policy"><i>Privacy Policy</i></a><br>
+    <a href="/contact/term-of-use"><i>Term of Use</i></a>
 </div>
+
+
 
 <%= form_for [refinery, :inquiries, inquiry] do |f| %>
     <div class="form_title">Provide your information</div>
@@ -33,7 +37,7 @@
   <% end %>
 
   <div class='field message_field'>
-    <%= f.label :message, :class => 'placeholder-fallback required' %>
+    <%= f.label :text, :class => 'placeholder-fallback required' %>
     <%= f.text_area :message, :rows => 8, :required => 'required',
       :placeholder => (t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders) %>
   </div>
