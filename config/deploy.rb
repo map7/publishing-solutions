@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'publishing-solutions.com.au'
-set :repo_url, 'ssh://map7@192.168.200.4:22/~/code/publishing_solutions_website'
+set :repo_url, 'ssh://map7@mail.tramontana.com.au:2222/~/code/publishing_solutions_website'
 #set :repo_url, 'git@example.com:me/my_repo.git'
 
 # Default branch is :master
