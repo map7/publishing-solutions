@@ -63,20 +63,20 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   if config.respond_to?(:action_mailer)
-    # config.action_mailer.raise_delivery_errors = false
+    config.action_mailer.raise_delivery_errors = false
   end
 
-  # Configure the mail.
-  #
-  config.action_mailer.delivery_method = :sendmail
-  # Defaults to:
-  # config.action_mailer.sendmail_settings = {
-  #   location: '/usr/sbin/sendmail',
-  #   arguments: '-i -t'
-  # }
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'no-reply@publishing-solutions.com.au'}
+  # # Configure the mail.
+  # #
+  # config.action_mailer.delivery_method = :sendmail
+  # # Defaults to:
+  # # config.action_mailer.sendmail_settings = {
+  # #   location: '/usr/sbin/sendmail',
+  # #   arguments: '-i -t'
+  # # }
+  # config.action_mailer.perform_deliveries = true
+  # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.default_options = {from: 'no-reply@publishing-solutions.com.au'}
 
   # --------------------------------------------------------------------------------
   # Setup using gmail
