@@ -291,7 +291,6 @@ footer {
 
 
 /*------------ SLIDESHOW --------------*/
-
 .slider-wrapper {
     z-index:-1000;
     position:fixed;
@@ -332,6 +331,10 @@ footer {
 }
 
 /*------------ BACKLIST PRODUCTS --------------*/
+#genres {
+    min-width:800px;
+}
+
 .form-style-2-heading{
     font-weight: bold;
     font-style: italic;
@@ -343,6 +346,8 @@ footer {
 
 .genre_link  {
     padding:20px 15px 0px 0;
+    color:red!important;
+    position:static;
 }
 
 .backlists li {
