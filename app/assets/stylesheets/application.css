@@ -94,16 +94,11 @@ h3 {
 
 .active {background:none;}
 
-#page {
-}
-
 .content_rigth {
     float:right;
     width:75%;
     height:auto;
-
 }
-
 
 .content_left {
     float:right;
@@ -127,8 +122,6 @@ h3 {
     margin-right:3px;
 }
 
-
-
 /*------------ HEADER --------------*/
 #header_container {
     border-top:6px solid #13b5ea;
@@ -137,7 +130,6 @@ h3 {
     background-image:url("lines.png");
     background-repeat: repeat-x;
     padding-bottom:3px;
-
 }
 
 .header_left {
@@ -159,13 +151,13 @@ h3 {
 }
 
 .ribbon_left:after {
-	content: ""; 
-	position: absolute; 
-	bottom: 0; 
-	left: 0; 
-	border-top: 42px solid #13b5ea; 
-	border-left: 42px solid #fff; 
-	height: 0; 
+	  content: ""; 
+	  position: absolute; 
+	  bottom: 0; 
+	  left: 0; 
+	  border-top: 42px solid #13b5ea; 
+	  border-left: 42px solid #fff; 
+	  height: 0; 
 }
 
 
@@ -296,8 +288,8 @@ footer {
 
 .slider-wrapper {
     z-index:-1000;
-    position:relative;
-    top:0;
+    position:absolute;
+    top:260px;
     left:0;
     cursor:default;
     mix-height: 100%!important;
@@ -305,14 +297,8 @@ footer {
     width: auto\9;
     border: 0;
     -ms-interpolation-mode: bicubic;
-
-}
-    
 }
 
-.slider-wrapper img{
-    margin-top:225px;
-}
 
 .nivo-caption {
     position:absolute;
