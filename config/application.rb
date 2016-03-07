@@ -22,5 +22,8 @@ module PsWebsite
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Get the full domain on the end of the mailer from string
+    config.action_dispatch.tld_length = 2
   end
 end
