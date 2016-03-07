@@ -289,7 +289,6 @@ footer {
 .slider-wrapper {
     z-index:-1000;
     position:absolute;
-    top:230px;
     left:0;
     cursor:default;
     mix-height: 100%!important;
