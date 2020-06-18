@@ -11,7 +11,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
-gem 'pg'                        # PostgreSQL
+gem 'pg', '0.18.4'              # PostgreSQL
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -76,4 +76,4 @@ gem 'refinerycms-inquiries'#, github: 'refinery/refinerycms-inquiries', branch: 
 gem 'refinerycms-backlists', path: 'vendor/extensions'
 
 gem 'nivo-rails'                # Frontpage slideshow/carousel
-gem 'owlcarousel-rails'         # Backlists slideshow/carousel
+gem 'owlcarousel-rails', '1.1.3.3'         # Backlists slideshow/carousel
