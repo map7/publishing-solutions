@@ -7,10 +7,6 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.3'
 
-group :development, :test do 
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
 gem 'pg', '0.18.4'              # PostgreSQL
 
 # Use SCSS for stylesheets
