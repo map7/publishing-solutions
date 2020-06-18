@@ -7,7 +7,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.3'
 
-gem 'pg', '0.18.4'              # PostgreSQL
+gem 'pg', '~> 0.21'              # PostgreSQL
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
