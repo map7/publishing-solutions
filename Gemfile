@@ -35,7 +35,9 @@ gem 'bcrypt', '~> 3.1.12'
 
 # Use Capistrano for deployment
 group :development do 
-  gem 'capistrano-rails', '~> 1.1' # Install capistrano with rails specific plugins (migrate & assets)
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-passenger'
 end
 
 
