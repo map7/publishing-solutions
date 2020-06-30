@@ -69,7 +69,7 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
 gem 'refinerycms-image_slideshows',git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
-gem 'refinerycms-inquiries'#, github: 'refinery/refinerycms-inquiries', branch: 'master'
+gem 'refinerycms-inquiries', '= 3.0.1'#,github: 'refinery/refinerycms-inquiries', branch: 'master'
 
 gem 'refinerycms-backlists', path: 'vendor/extensions'
 
