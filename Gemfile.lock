@@ -118,6 +118,7 @@ GEM
       activemodel (>= 4.2, < 5.2)
       activerecord (>= 4.2, < 5.2)
       request_store (~> 1.0)
+    httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
@@ -224,9 +225,10 @@ GEM
       dragonfly (~> 1.1.0)
       globalize (>= 4.0.0, < 5.2)
       refinerycms-core (= 3.0.6)
-    refinerycms-inquiries (3.0.1)
+    refinerycms-inquiries (3.1.0)
       actionmailer (~> 4.2.4)
       filters_spam (~> 0.2)
+      httpclient
       refinerycms-core (~> 3.0.0)
       refinerycms-settings (~> 3.0.0)
     refinerycms-pages (3.0.6)
@@ -327,7 +329,7 @@ DEPENDENCIES
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-backlists!
   refinerycms-image_slideshows!
-  refinerycms-inquiries (= 3.0.1)
+  refinerycms-inquiries (~> 3.0)
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 1.0)
