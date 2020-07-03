@@ -21,4 +21,8 @@ Refinery::Inquiries.configure do |config|
 
   # Toggle the spam filter
   # config.filter_spam = true
+
+  # reCAPTCHA key
+  config.recaptcha_site_key = ENV["PS_RECAPTCHA_SITE_KEY"]
+
 end
