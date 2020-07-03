@@ -37,6 +37,15 @@
        :placeholder => (t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders) %>
   </div>
   <div class="actions">
+    <% if Refinery::Inquiries.recaptcha_site_key.present? %>
+      <% content_for :javascripts do %>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+      <% end %>
+      <div class='field captcha'>
+        <div class="g-recaptcha" data-sitekey="<%= Refinery::Inquiries.recaptcha_site_key %>"></div>
+      </div>
+    <% end %>
+
     <%= f.submit t('.send') %>
   </div>
 <% end %>
