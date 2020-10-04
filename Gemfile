@@ -70,6 +70,8 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 # The default authentication adapter
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
+gem 'devise', git: 'https://github.com/plataformatec/devise' , branch: '3-stable'
+
 gem 'refinerycms-image_slideshows',git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
 gem 'refinerycms-inquiries', '~> 3.0'
 
